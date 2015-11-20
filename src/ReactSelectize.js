@@ -547,6 +547,9 @@
     highlightAndScrollToOption: function(index, callback){
       var uid, this$ = this;
       callback == null && (callback = function(){});
+      if (!index) {
+        index = 0;
+      }
       uid = this.props.uid(this.props.options[index]);
       this.props.onHighlightedUidChange(uid, function(){
         var ref$, ref1$, optionElement, parentElement, optionHeight;
