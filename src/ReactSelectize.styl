@@ -4,7 +4,7 @@
     border-radius 4px
     font-family Helvetica Neue, Helvetica, Arial, sans-serif
     -webkit-user-select none
-    position relative    
+    position relative
 
     &.disabled
         pointer-events none
@@ -31,10 +31,10 @@
             top 0
             left 0px
 
-        input 
+        input
             background none
             border none
-            outline none 
+            outline none
             font-size 1em
             margin 2px
             padding 4px 0px
@@ -65,7 +65,7 @@
 
         .value-wrapper
             display inline-block
-            
+
     .dropdown-transition
         overflow hidden
         position absolute
@@ -83,10 +83,10 @@
 
             &.slide-enter-active, &.slide-leave-active
                 transition transform 0.2s 0s ease
-            
+
             .option-wrapper.highlight
-                background #f2f9fc
-                color #333
+                background #eaeaea
+                color #111
 
     &.flipped
 
@@ -98,10 +98,10 @@
 
             &.slide-enter
                 transform translateY(100%)
-            
+
             &.slide-enter-active
                 transform translateY(0%)
-            
+
             &.slide-leave
                 transform translateY(0%)
 
@@ -126,33 +126,33 @@
                 border-top-right-radius 4px
 
     &:not(.flipped)
-        
+
         .arrow
             border-color #999999 transparent transparent
             border-width 5px
-        
+
         .dropdown
 
             &.slide-enter
                 transform translateY(-100%)
-            
+
             &.slide-enter-active
                 transform translateY(0%)
-            
+
             &.slide-leave
                 transform translateY(0%)
-            
+
             &.slide-leave-active
                 transform translateY(-100%)
 
-        &.open   
-            
+        &.open
+
             .control
                 border-bottom-left-radius 0px
                 border-bottom-right-radius 0px
                 border-top-left-radius 4px
                 border-top-right-radius 4px
-                
+
                 .arrow
                     border-color transparent transparent #999999
                     border-width 0 5px 5px
@@ -166,7 +166,7 @@
     .groups.as-columns
         display flex
 
-        > div 
+        > div
             flex 1
 
     .no-results-found
@@ -184,10 +184,10 @@
         color #666
         cursor pointer
         padding 8px 10px
-        
+
         &.not-selectable
             background-color #f8f8f8
             color #999
             cursor default
             font-style oblique
-            text-shadow 0px 1px 0px white        
+            text-shadow 0px 1px 0px white
