@@ -96,8 +96,8 @@
   transition: transform 0.2s 0s ease;
 }
 .react-selectize .dropdown-transition .dropdown .option-wrapper.highlight {
-  background: #f2f9fc;
-  color: #333;
+  background: #eaeaea;
+  color: #111;
 }
 .react-selectize.flipped .arrow {
   border-color: transparent transparent #999;
