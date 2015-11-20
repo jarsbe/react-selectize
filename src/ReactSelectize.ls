@@ -451,6 +451,7 @@ module.exports = create-class do
 
     # highlight-and-scroll-to-option :: Int, (a -> Void)? -> Void
     highlight-and-scroll-to-option: (index, callback = (->)) !->
+        index = 0 unless index
         uid = @props.uid @props.options[index]
         <~ @props.on-highlighted-uid-change uid
         option-element? = find-DOM-node @refs?["option-#{@uid-to-string uid}"]
@@ -492,7 +493,7 @@ module.exports = create-class do
     # select-highlighted-uid :: Int -> Void
     select-highlighted-uid: (anchor-index) !->
         return if @props.highlighted-uid == undefined
-        
+
         index = @option-index-from-uid @props.highlighted-uid
         return if typeof index != \number
 
